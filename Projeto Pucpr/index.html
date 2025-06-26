@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link para utilizar das fontes adquiridas na api do google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+<!--Coloca o css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Coloca o ícone  da página-->
+    <link rel="icon" type="image/png" href="img/cao.png">
+    <title>Amicão</title>
+
+</head>
+
+<body>
+<!--Cria a div logo assim como o menu que será usado e as ref deles-->
+    <header>
+        <div class="logo">Pucpr Trabalho ADS</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="form.html">Participe</a></li>
+                <li><a href="formAction.html">Dados Recebidos</a></li>
+                <li><a href="participantes.html">Participantes</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--Cria as classes que serão usadas para o conteúdo quando ativo-->
+    <main class="visu">
+        <div class="list">
+
+            <div class="dog active">
+
+                <div class="dog-img">
+                    <img src="img/Leona_Assustada.png" alt="Leona Assustada">
+                </div>
+
+                <div class="content">
+                    <p class="dog-tag">A CHEGADA</p>
+                    <p class="dog-name">Oi eu sou a Leona</p>
+                    <p class="dog-description">Oi, eu sou a Leona. Sou uma Border Collie misturada com Vira-lata e
+                        fui adotada duas semanas atrás pelas minha nova familia. Sou muito receiosa pois recebi maus
+                        tratos de minha antiga família, nos primeiros dias na nova casa eu estava muito assustada e
+                        com muita fome preferindo dormir na chuva do que ficar proximo das pessoas, sempre de cabeça
+                        baixa e um olhar triste.
+                    </p>
+                </div>
+            </div>
+<!--Cria as classes de conteúdo de maneira geral-->
+            <div class="dog">
+
+                <div class="dog-img">
+                    <img src="img/Leona_Contato.png" alt="Leona Contato">
+                </div>
+
+                <div class="content">
+                    <p class="dog-tag">PRIMEIROS CONTATOS</p>
+                    <p class="dog-name">Foram pequenos passos</p>
+                    <p class="dog-description">Foi preciso de muita paciencia para que eu chegasse perto na primeira vez
+                    e só foi possível pois meus tutores devotaram muito tempo ficando perto de mim e deixaram as
+                    coisas acontecerem no meu tempo, claro que os deliciosos petiscos que usaram podem ter me
+                    influenciado aos poucos hehe
+                    </p>
+                </div>
+            </div>
+<!--Cria as classes de conteúdo de maneira geral-->
+            <div class="dog">
+                <div class="dog-img">
+                    <img src="img/Leona_Relaxada.png" alt="Leona Relaxada">
+                </div>
+
+                <div class="content">
+                    <p class="dog-tag">DIAS ATUAIS</p>
+                    <p class="dog-name">Soltinha!</p>
+                    <p class="dog-description">Depois de uma semana e meia eu ja estou acostumada com meus novos
+                    tutores, bem alimentada, feliz e cheirosa. Sou muito brincalhona e adoro brincar de
+                    pega-pega, e quando quero descanso gosto que me façam cafunés e carinho na barriga. Ainda
+                    tenho alguns receios mas aos poucos vou deixando de lado e aprendendo que agora estou no meu
+                    verdadeiro lar! Auf!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        </div>
+<!--Cria as classes das setas e coloca a svg das setas pegas no bootstrap-->
+        <div class="arrows">
+            <button class="arrow-btn" id="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                    class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                </svg>
+
+            </button>
+            <button class="arrow-btn" id="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg>
+
+            </button>
+
+        </div>
+<!--Cria as classes que será utilizado para colocar os indicadores numéricos-->
+        <div class="indicators">
+            <div class="numbers">01</div>
+            <div class="dots">
+
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+<!--Coloca o script javascript-->
+<script src="script/script.js"></script>
+
+</html>
