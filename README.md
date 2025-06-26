@@ -1,4 +1,4 @@
-ACCESS/ACESSO:
+ACCESS/ACESSO: https://spectre-of-a-lonely-soul.github.io/ClassProject/
 
 Website desenvolvido para ser apresentado como trabalho acadêmico na faculdade. 
 
