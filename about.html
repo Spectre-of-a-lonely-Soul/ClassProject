@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link para utilizar das fontes adquiridas na api do google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+<!--Coloca o css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Coloca o ícone  da página-->
+    <link rel="icon" type="image/png" href="img/cao.png">
+    <title>Amicão - Sobre</title>
+
+
+</head>
+
+<body>
+    <!--Cria a div logo assim como o menu que será usado e as ref deles-->
+
+    <header>
+        <div class="logo">Pucpr Trabalho ADS</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="form.html">Participe</a></li>
+                <li><a href="formAction.html">Dados Recebidos</a></li>
+                <li><a href="participantes.html">Participantes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Cria as classes que serão usadas para o conteúdo quando ativo-->
+
+    <main class="visu">
+        <div class="list">
+
+            <div class="dog active">
+
+                <div class="dog-img">
+                    <img src="img/EU.png" alt="Tutores">
+                </div>
+
+                <div class="content">
+                    <p class="dog-tag">Estudante de ADS</p>
+                    <p class="dog-name">Thiago Ramos</p>
+                    <p class="dog-description"> O website foi criado com o proposito de ser apresentado na atividade
+                        Somativa 01, como eu ja tenho previos conhecimantos de html/css/javascript pois acompanho aulas
+                        por diversas plataformas, tentei utilizar de todo o conhecimento que disponho para a realização
+                        deste projeto. Mesmo tendo o conhecimento ainda tenho muitas dúvidas e me falta certa confiança,
+                        porém gosto de provar a eu mesmo que sou capaz.
+                    </p>
+                </div>
+            </div>
+<!--Cria as classes de conteúdo de maneira geral-->
+            <div class="dog">
+
+                <div class="dog-img">
+                    <img src="img/Tutores.jpeg" alt="Tutores">
+                </div>
+
+                <div class="content">
+                    <p class="dog-tag">TUTORES</p>
+                    <p class="dog-name">Um Jovem Casal</p>
+                    <p class="dog-description"> Somos um casal com um relacionamento estável, quase completando dois
+                        anos juntos.
+                        Adotamos a Leona com o propósito de aumentar nossa família e ter uma companhia
+                        para caminhadas, passeios e brincadeiras. Embora ela ainda seja uma cadela assustada,
+                        estamos ajudando-a a superar seus traumas e deixá-la o mais confortável possível.
+                    </p>
+                </div>
+            </div>
+
+            <div class="dog">
+                <div class="dog-img">
+                    <img src="img/Referencias.png" alt="Referencias">
+                </div>
+<!--Coloca uma lista na descrição desta aba-->
+                <div class="content">
+                    <p class="dog-tag">Referências</p>
+                    <p class="dog-name">Materiais de estudos utilizados para fazer o site</p>
+                    <p class="dog-description">
+                    <ol>
+                        <li> DevClub_(Principal Canal que moldou minha maneira de programar websites, PRINCIPALMENTE quando o assunto é CSS)
+                        </li>
+                        <li>Google Fonts_(Daonde foi retirado as fontes "Orbitron" e "Montserrat" da quais considero
+                            junto da "Playfair Display" as melhores fontes para deixar um Website com uma cara mais
+                            moderna)</li>
+                        <li>
+                            Bootstrap_(Daonde foi retirado os icones das setas utilizadas pra fazer o carrosel)
+                        </li>
+                    </ol>
+                    </p>
+                </div>
+            </div>
+
+
+
+        </div>
+        </div>
+<!--Cria as classes das setas e coloca a svg das setas pegas no bootstrap-->
+        <div class="arrows">
+            <button class="arrow-btn" id="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-caret-left-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                </svg>
+
+            </button>
+            <button class="arrow-btn" id="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg>
+
+            </button>
+
+        </div>
+<!--Cria as classes que será utilizado para colocar os indicadores numéricos-->
+        <div class="indicators">
+            <div class="numbers">01</div>
+            <div class="dots">
+
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+<!--Coloca o script javascript-->
+<script src="script/script.js"></script>
+
+</html>

@@ -1,0 +1,243 @@
+
+/*Seletor Universal p/ configurações gerais e tirar conf. usada normalmente nos navegadores*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+
+}
+/*define as cores da pagina e retira o scroll da pag para deixar mais elegante*/
+body {
+    background-color: #0f0f1e;
+    color: #fff;
+    font-size: 16px;
+    overflow: hidden;
+}
+/*Usa o flex p dx um do lado do outro e o space between c/ a para jogar cada um para ao lado assim como fixa o menu e coloca ele assim de tudo com o z-index*/
+header {
+    position: fixed;
+    width: 95vw;
+    top: 0;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+/* configura a logo do site*/
+.logo {
+    font-family: "Orbitron", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: cyan;
+    text-shadow: 0 0 20px mediumturquoise;
+}
+/*Começa as configurações do menu*/
+/*Configura o espaçamento do menu*/
+header nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+header nav ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 5px 0;
+}
+/*Configura a aparencia do menu*/
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.1s ease;
+}
+/*Identificador de qual aba você já visitou*/
+nav ul li a:visited {
+    color: rgba(12, 28, 177, 0.473);
+}
+/*Identificador de qual aba você está*/
+nav ul li a.active {
+    color: rgb(4, 248, 248);
+    font-weight: 1000;
+}
+/*Linha Abaixo no menu*/
+header nav ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: cyan;
+    transition: width 0.3s ease;
+}
+/*Quando coloca o mouse em cima ativa o background*/
+header nav ul li:hover::after {
+    width: 100%;
+}
+/*Termina a configuração do menu*/
+/*Começa configuração da parte principal(main) do website*/
+/*Configura a aparencia da parte que ficará o conteudo*/
+.visu {
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(45deg, #070118, #10243a);
+    overflow: hidden;
+}
+/* Começa a config a posição  geral do conteudo*/
+.list {
+    width: 80%;
+    height: 100%;
+    margin:0% auto;
+    position: relative;
+}
+
+/* Configura a posição da classe que estará o conteúdo*/
+.dog {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(100vw);
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+
+
+}
+/* Permite ver o conteudo apenas quando ele tem a classe active*/
+.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* Começa a config a parte da imagem*/
+.dog-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+/* Configura a imagem em sí*/
+.dog-img img {
+    max-width: 90%;
+    max-height: 50%;
+    border-radius: 30px;
+    filter: drop-shadow(0 0 30px cyan);
+}
+/* Começla a config do contúdo escrito*/
+.content {
+    width: 50%;
+    padding-right: 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+/* Configura parágrafo 01*/
+.dog-tag {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: cyan;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+/* Configura parágrafo 02*/
+.dog-name {
+    font-size: 3rem;
+    font-family: "Orbitron", sans-serif;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+/* Configura parágrafo 03*/
+.dog-description {
+    font-size: 1rem;
+    color:azure;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+/*Configura as setas*/
+.arrows {
+    position: absolute;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+/* Configura a aparencia das setas*/
+.arrow-btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #0f345c;
+    border-color: cyan;
+    display: inside;
+}
+/* Configura a aparencia das setas com um mouse em cima*/
+.arrow-btn:hover {
+    cursor: pointer;
+    background-color: rgb(14, 106, 110);
+    border-color: cyan;
+}
+/*Configura a posição dos numeros indicvadores*/
+.indicators {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 5;
+}
+/*Configura os numeros indicvadores*/
+.numbers {
+    font-family: "Orbitron", sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #10243a;
+
+}
+/*Configura a posição do sublinhado*/
+.dots {
+    display: flex;
+    gap: 10px;
+}
+/*Configura a aparencia do sublinhado*/
+.dot {
+    width: 50px;
+    height: 8px;
+    background-color: #10243a;
+    border-radius: 5px;
+}
+/*Configura a aparencia do sublinhado com a classe active*/
+.dot.active {
+    background-color: cyan;
+    box-shadow: 3px 3px 10px #154374;
+}
+/*Configura a lista do about*/
+main ol li {
+    list-style-type: upper-roman;
+    padding-left: 15px;
+    font-size: 1rem;
+    color:azure;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 800px;
+
+}
+
+
+
+
+
+
